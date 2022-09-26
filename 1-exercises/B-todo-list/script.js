@@ -1,12 +1,24 @@
+const content = document.getElementById("content");
+const unorderedList = document.createElement("ul");
+content.appendChild(unorderedList);
+
 function todoList(todos) {
-  // Write your code here...
+  todos.forEach((todo) => {
+    const list = document.createElement("li");
+    list.textContent = todo.todo;
+    unorderedList.appendChild(list);
+    list.style.cursor = "pointer";
+    list.addEventListener("click", () => {
+      list.classList.toggle("line-through");
+    });
+  });
 }
 
 const todos = [
   { todo: "wash the dishes" },
   { todo: "walk the dog" },
   { todo: "learn javascript" },
-  { todo: "go shopping" }
+  { todo: "go shopping" },
 ];
 
 todoList(todos);

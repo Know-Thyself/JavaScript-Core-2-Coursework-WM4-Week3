@@ -23,7 +23,7 @@ To view the website, open index.html in a browser.
 
 A basic example of this can website can be found here
 
-https://chrisowen101.github.io/ToDoListSolution/
+<https://chrisowen101.github.io/ToDoListSolution/>
 
 This covers only the basic tasks, not the advanced tasks.
 
@@ -60,7 +60,7 @@ Add a button that users can click that will iterate through the list of ToDos an
 
 We want users to be able to set, and see, deadlines for their ToDos.
 
-When creating ToDos we want the user to be able to use a datepicker input so they can see when they need to complete the ToDo. The date can be added to the ToDo in the list. If there is no date set when the ToDo is created then this can be skipped.
+When creating ToDos we want the user to be able to use a datePicker input so they can see when they need to complete the ToDo. The date can be added to the ToDo in the list. If there is no date set when the ToDo is created then this can be skipped.
 
 EXTRA CHALLENGE: instead of displaying the date on the ToDo, implement a countdown of days left until the deadline. You can use the Javascript Date reference to accomplish this:
-https://www.w3schools.com/jsref/jsref_obj_date.asp
+<https://www.w3schools.com/jsref/jsref_obj_date.asp>

@@ -1,5 +1,34 @@
+const content = document.getElementById("content");
+const select = document.createElement("select");
+const option = document.createElement("option");
+option.innerText = "pick highlighter";
+select.appendChild(option).disabled = true;
+content.appendChild(select);
+const text = document.createElement("p");
+content.appendChild(text);
+content.style.width = "90%";
+content.style.margin = "auto";
+select.style.marginTop = "1.5rem";
+
 function highlightWords(paragraph, colours) {
-  // Write your code here...
+  colours.forEach((color) => {
+    const option = document.createElement("option");
+    option.innerText = color;
+    select.appendChild(option);
+  });
+
+  const words = paragraph.split(" ");
+  words.forEach((word) => {
+    const span = document.createElement("span");
+    span.innerText = word + " ";
+    text.appendChild(span);
+
+    span.addEventListener("click", () => {
+      select.value === "none"
+        ? (span.style.backgroundColor = "white")
+        : (span.style.backgroundColor = select.value);
+    });
+  });
 }
 
 const paragraph =
