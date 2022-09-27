@@ -6,9 +6,6 @@ select.appendChild(option).disabled = true;
 content.appendChild(select);
 const text = document.createElement("p");
 content.appendChild(text);
-content.style.width = "90%";
-content.style.margin = "auto";
-select.style.marginTop = "1.5rem";
 
 function highlightWords(paragraph, colours) {
   colours.forEach((color) => {

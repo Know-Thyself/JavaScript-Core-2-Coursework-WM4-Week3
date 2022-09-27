@@ -36,8 +36,8 @@ function populateTodoList(todos) {
       if (Array.from(li.classList).includes("line-through")) {
         todo.completed = true;
       } else {
-				todo.completed = false;
-			}
+        todo.completed = false;
+      }
     });
 
     // An event listener to delete a todo list when trash icon is clicked.
@@ -58,7 +58,7 @@ const todos = [
 populateTodoList(todos);
 
 const addNewTodo = (e) => {
-	const addButton = document.querySelector(".btn");
+  const addButton = document.querySelector(".btn");
   e.preventDefault();
   let input = document.querySelector("#todoInput");
   if (input.value === "") alert("Please input your todo task");
@@ -69,18 +69,18 @@ const addNewTodo = (e) => {
 };
 
 const buttonContainer = document.querySelectorAll(".col-auto")[1];
-const deleteAllCompletedBtn = document.createElement('button');
-deleteAllCompletedBtn.classList.add('btn', 'btn-danger', 'mb-3');
-deleteAllCompletedBtn.innerText = 'Delete Completed Tasks';
+const deleteAllCompletedBtn = document.createElement("button");
+deleteAllCompletedBtn.classList.add("btn", "btn-danger", "mb-3");
+deleteAllCompletedBtn.innerText = "Delete Completed Tasks";
 buttonContainer.appendChild(deleteAllCompletedBtn);
 deleteAllCompletedBtn.addEventListener("click", deleteAllCompletedTodos);
 
 function deleteAllCompletedTodos(e) {
-	e.preventDefault();
-	const list =  document.querySelectorAll('li');
-	list.forEach(li => {
-		if (Array.from(li.classList).includes("completed")) {
-			li.remove();
+  e.preventDefault();
+  const list = document.querySelectorAll("li");
+  list.forEach((li) => {
+    if (Array.from(li.classList).includes("completed")) {
+      li.remove();
     }
-	})
+  });
 }
