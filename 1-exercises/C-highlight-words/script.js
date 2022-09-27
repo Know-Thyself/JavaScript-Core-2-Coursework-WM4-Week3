@@ -24,9 +24,7 @@ function highlightWords(paragraph, colours) {
     text.appendChild(span);
 
     span.addEventListener("click", () => {
-      select.value === "none"
-        ? (span.style.backgroundColor = "white")
-        : (span.style.backgroundColor = select.value);
+      span.style.background = select.value;
     });
   });
 }

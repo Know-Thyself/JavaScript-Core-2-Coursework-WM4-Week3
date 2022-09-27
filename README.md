@@ -9,6 +9,6 @@ The `3-extra` folder contains exercises that you can complete to challenge yours
 
 The solutions for this coursework can be found here:
 
-https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week3-London8-Solution
+<https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week3-London8-Solution>
 
 This is a **private** repository. Please request access from your Teachers, Buddy or City Coordinator after the start of your next lesson.
