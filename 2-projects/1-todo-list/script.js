@@ -30,19 +30,12 @@ function populateTodoList(todos) {
 
     // Event listener for the check button to line through when clicked.
     checkMark.addEventListener("click", (e) => {
-      e.preventDefault();
       li.classList.toggle("completed");
       checkMark.classList.toggle("light-grey");
-      if (Array.from(li.classList).includes("line-through")) {
-        todo.completed = true;
-      } else {
-        todo.completed = false;
-      }
     });
 
     // An event listener to delete a todo list when trash icon is clicked.
     trash.onclick = (e) => {
-      e.preventDefault();
       li.remove();
     };
   });
@@ -58,7 +51,6 @@ const todos = [
 populateTodoList(todos);
 
 const addNewTodo = (e) => {
-  const addButton = document.querySelector(".btn");
   e.preventDefault();
   let input = document.querySelector("#todoInput");
   if (input.value === "") alert("Please input your todo task");
